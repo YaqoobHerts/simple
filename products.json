@@ -1,7 +1,7 @@
 [
   {
     "name": "Organic Apples",
-    "productImage": "images/apple.jpg",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/f986a6e6-39fb-489e-8c15-1a4ffb34609d/500x500.jpg",
     "barcodeImage": "https://barcodeapi.org/api/auto/110821686"
   },
   {
