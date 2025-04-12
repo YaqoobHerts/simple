@@ -1,5 +1,10 @@
 [
   {
+    "name": "Morrisons Onion Salad (Loose)",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/82cfc720-206a-480e-8df2-ec938b07d070/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/09014497"
+  },
+  {
     "name": "Morrisons Papaya",
     "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/b2c9b7c3-701c-4849-91f5-0d3d5288f9f7/500x500.jpg",
     "barcodeImage": "https://barcodeapi.org/api/auto/5010251737520"
