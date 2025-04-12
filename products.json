@@ -95,53 +95,103 @@
     "barcodeImage": "https://barcodeapi.org/api/auto/5010251733867"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Baking Potatoe (Loose)",
+    "productImage": "https://m.media-amazon.com/images/I/71Jr6HmB3oL._AC_UF1000,1000_QL80_.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251731917"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Butternuts Squash (Loose)",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/22c852ce-4df5-4437-95e7-ade5fdae18d1/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251744085"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Celeriac ",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/747703f5-0bc1-45d7-9780-d57ba19dd860/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251743859"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Loose Conference Pears",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/d23e104a-723c-457d-81f0-fb3506d2fff2/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251903666"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Loose Braeburn Apples",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/e1588296-3c45-4d64-bbd3-fe0e15592e5c/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/2335973000000"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Broccoli",
+    "productImage": "https://m.media-amazon.com/images/I/61eZ4E-t-7L.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251761334"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Medium Cauliflower",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/12186f8f-cb95-401c-9833-f1635b96597d/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251921776"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Loose Coconut",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/16ee40f7-5f92-461c-9f1d-c0c456293591/300x300.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251737681"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Coxs Apple",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/94d844fd-aa0f-4ae0-852c-f091f6e1b8c1/300x300.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251952152"
   },
   {
-    "name": "Free Range Eggs",
-    "productImage": "images/eggs.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/"
+    "name": "Morrisons Whole Cucumber",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/13e565d4-3a9c-401f-bef2-0bc08938dbe7/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251733911"
+  },
+  {
+    "name": "Morrisons Market Street Loose Golden Delicious Apples",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/c26353d2-0209-4bfa-93e9-9124f6e89cca/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/2335976000000"
+  },
+  {
+    "name": "Morrisons Loose Kiwi Fruit",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/77bf9b2e-9f2b-4a5f-abe7-a55553d41ad1/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251737643"
+  },
+  {
+    "name": "Morrisons Loose Limes",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/c5fe49dc-7a04-48bc-aa8a-828097e656d6/300x300.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251731337"
+  },
+  {
+    "name": "Morrisons Orange Loose",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/ff101d09-b283-4a37-93be-77228ca9772c/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251731306"
+  },
+  {
+    "name": "Morrisons Garlic",
+    "productImage": "https://tb-static.uber.com/prod/image-proc/processed_images/27859aea2226004fc8f7712612af4a4a/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251743545"
+  },
+  {
+    "name": "Morrisons Market Street Loose Granny Smith Apples",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/d09a7c21-66a9-4877-bf62-434c5f998b0d/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251903604"
+  },
+  {
+    "name": "Morrisons Whole Honeydew Melon",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/9270c882-acc1-4791-928d-84f3fd84633c/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/12345670"
+  },
+  {
+    "name": "Morrisons Loose Lemon",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/9931427b-81ce-425e-8ba1-903c1f9a9ee0/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251731344"
+  },
+  {
+    "name": "Morrisons Mango (Loose)",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/12f99fea-8dd7-4400-9360-003cae4f8f94/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251824275"
+  },
+  {
+    "name": "Morrisons Loose Orange Pepper",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/ea22d148-1f97-4f90-91c4-4d85b0452e29/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251733850"
   }
 ]
