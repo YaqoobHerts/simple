@@ -2,16 +2,16 @@
   {
     "name": "Organic Apples",
     "productImage": "images/apple.jpg",
-    "barcodeImage": "images/apple_barcode.jpg"
+    "barcodeImage": "https://barcodeapi.org/api/auto/110821686"
   },
   {
     "name": "Whole Grain Bread",
     "productImage": "images/bread.jpg",
-    "barcodeImage": "images/bread_barcode.jpg"
+    "barcodeImage": "https://barcodeapi.org/api/auto/110821686"
   },
   {
     "name": "Free Range Eggs",
     "productImage": "images/eggs.jpg",
-    "barcodeImage": "images/eggs_barcode.jpg"
+    "barcodeImage": "https://barcodeapi.org/api/auto/110821686"
   }
 ]
