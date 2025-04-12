@@ -1,17 +1,17 @@
 [
-  {
-    "name": "Organic Apples",
-    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/f986a6e6-39fb-489e-8c15-1a4ffb34609d/500x500.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/110821686"
-  },
-  {
-    "name": "Whole Grain Bread",
-    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/f6bbc343-8839-4cae-ab5d-cdd6893b0700/500x500.jpg",
-    "barcodeImage": "https://barcodeapi.org/api/auto/110821686"
-  },
-  {
+ {
     "name": "Morrisons Papaya",
     "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/b2c9b7c3-701c-4849-91f5-0d3d5288f9f7/500x500.jpg",
     "barcodeImage": "https://barcodeapi.org/api/auto/5010251737520"
+  },
+  {
+    "name": "Morrisons Pink Lady Apple (Loose)",
+    "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/6fa3cada-d149-4ef0-98f4-f095791c3103/500x500.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010251903659"
+  },
+  {
+    "name": "Morrisons Pomegranate Large",
+    "productImage": "https://m.media-amazon.com/images/I/61vu6EFz-qL.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/5010525038971"
   }
 ]
