@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Product Scanner</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Roboto', sans-serif;
+    }
+    .card {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .search-input {
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+    .loading {
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-message {
+      text-align: center;
+      padding: 2rem;
+      color: #dc3545;
+    }
+    .barcode-placeholder {
+      background-color: #e9ecef;
+      height: 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6c757d;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    /* Minimal changes: Fixed size for product images */
+    .card-img-top {
+      width: 100%;
+      height: 300px; /* Adjust height as needed */
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-center">Product Scanner</h1>
+    <p class="text-center text-muted">
+      Click on any product to view its barcode for scanning.
+    </p>
+
+    <h2 class="text-center">Product List</h2>
+    <!-- Search Field -->
+    <div class="search-input mb-4">
+      <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+    </div>
+    <!-- Product Cards -->
+    <div id="productList" class="row">
+      <div class="loading">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Loading products from GitHub...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for enlarged barcode -->
+  <div class="modal fade" id="barcodeModal" tabindex="-1" aria-labelledby="modalProductName" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modalProductName" class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div id="barcodeLoading" class="mb-2">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading barcode...</span>
+            </div>
+            <p>Loading barcode...</p>
+          </div>
+          <img id="modalBarcode" src="" alt="Enlarged Barcode" class="img-fluid" style="display: none;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // GitHub raw URL for the products.json file
+    const GITHUB_JSON_URL = "https://raw.githubusercontent.com/YaqoobHerts/simple/refs/heads/main/products.json";
+    
+    // Global variable to store products
+    let products = [];
+    
+    // Cache for barcode images to prevent multiple API calls
+    const barcodeCache = {};
+
+    // Function to load products from GitHub only
+    async function loadProducts() {
+      document.getElementById('productList').innerHTML = 
+        `<div class="loading">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p class="mt-2">Loading products from GitHub...</p>
+        </div>`;
+
+      try {
+        const response = await fetch(GITHUB_JSON_URL);
+        if (!response.ok) {
+          throw new Error(`Failed to load products data: ${response.status}`);
+        }
+        products = await response.json();
+        console.log('Successfully loaded products from GitHub');
+        displayProducts(products);
+      } catch (error) {
+        console.error('Error loading products from GitHub:', error);
+        document.getElementById('productList').innerHTML = 
+          `<div class="col-12">
+            <div class="alert alert-danger">
+              <h4 class="alert-heading">Data Loading Failed</h4>
+              <p>Unable to load product data from GitHub.</p>
+              <hr>
+              <p class="mb-0">Please check your connection and try again later.</p>
+            </div>
+          </div>`;
+        // Disable search when no products are available
+        document.getElementById('searchInput').disabled = true;
+      }
+    }
+
+    // Function to display products
+    function displayProducts(productsToDisplay) {
+      const productList = document.getElementById('productList');
+      productList.innerHTML = '';
+      
+      if (productsToDisplay.length === 0) {
+        productList.innerHTML = 
+          `<div class="col-12 text-center">
+            <div class="alert alert-info">No products found matching your search.</div>
+          </div>`;
+        return;
+      }
+      
+      productsToDisplay.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'col-12 col-md-4 mb-4 product-card';
+        productCard.setAttribute('data-name', product.name.toLowerCase());
+        
+        // Store the barcode URL in a data attribute instead of loading the image
+        productCard.innerHTML = 
+          `<div class="card h-100" data-bs-toggle="modal" data-bs-target="#barcodeModal" 
+               data-name="${product.name}" data-barcode="${product.barcodeImage}">
+            <img src="${product.productImage}" class="card-img-top" alt="Product Image">
+            <div class="card-body text-center">
+              <h5 class="card-title">${product.name}</h5>
+              <div class="barcode-placeholder">Click to view barcode</div>
+            </div>
+          </div>`;
+        
+        productList.appendChild(productCard);
+      });
+    }
+
+    // Load products when page loads
+    window.addEventListener('DOMContentLoaded', () => {
+      loadProducts();
+    });
+
+    // When modal is about to be shown, start loading the barcode
+    const modal = document.getElementById('barcodeModal');
+    modal.addEventListener('show.bs.modal', function (event) {
+      const card = event.relatedTarget;
+      const name = card.getAttribute('data-name');
+      const barcodeUrl = card.getAttribute('data-barcode');
+      
+      document.getElementById('modalProductName').textContent = name;
+      
+      const modalBarcode = document.getElementById('modalBarcode');
+      const barcodeLoading = document.getElementById('barcodeLoading');
+      
+      // Reset the modal state
+      modalBarcode.style.display = 'none';
+      barcodeLoading.style.display = 'block';
+      
+      // Check if we've already loaded this barcode before
+      if (barcodeCache[name]) {
+        // Use cached barcode image
+        modalBarcode.src = barcodeCache[name];
+        modalBarcode.style.display = 'block';
+        barcodeLoading.style.display = 'none';
+      } else {
+        // Load the barcode image
+        const img = new Image();
+        img.onload = function() {
+          // Cache the barcode URL to avoid multiple requests
+          barcodeCache[name] = barcodeUrl;
+          
+          // Update the modal
+          modalBarcode.src = barcodeUrl;
+          modalBarcode.style.display = 'block';
+          barcodeLoading.style.display = 'none';
+        };
+        
+        img.onerror = function() {
+          barcodeLoading.innerHTML = 
+            `<div class="alert alert-warning">
+              Failed to load barcode image. Please try again later.
+            </div>`;
+        };
+        
+        // Start loading the image
+        img.src = barcodeUrl;
+      }
+    });
+
+    // Live search: filter products as you type
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const searchValue = this.value.toLowerCase();
+      const filteredProducts = products.filter(product => 
+        product.name.toLowerCase().includes(searchValue)
+      );
+      displayProducts(filteredProducts);
+    });
+  </script>
+</body>
+</html>
