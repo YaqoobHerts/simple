@@ -1,5 +1,70 @@
 [
   {
+    "name": "Morrisons Custard Doughnuts",
+    "productImage": "https://m.media-amazon.com/images/I/514uaUKKOeL._AC_SX522_.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/104745613"
+  },
+  {
+    "name": "Baylis And Harding JOJOBA SILK & ALMOND HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/1/a/6349948-bhbmhwjosp-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854054257"
+  },
+  {
+    "name": "Baylis And Harding ELEMENTS DARK AMBER AND FIG HANDWASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/7/7/7397201-bhelhwda-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854104761"
+  },
+  {
+    "name": "Baylis And Harding ELEMENTS PINK BLOSSOM AND LOTUS FLOWER HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/1/d/7397204-bhelhwlf-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854104754"
+  },
+  {
+    "name": "Baylis And Harding ELEMENTS WHITE TEA & NEROLI HANDWASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/3/6/7397215-bhelhwwt-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854100428"
+  },
+  {
+    "name": "Baylis And Harding ROYALE GARDEN PEACH PEONY & JASMINE HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/b/2/3378863-bhrghwppj-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854100459"
+  },
+  {
+    "name": "Baylis And Harding PEONY LYCHEE VANILLA 500ML HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/5/c/8749098-bhhwplv-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854120037"
+  },
+  {
+    "name": "Baylis And Harding ROSE & HONEYSUCKLE HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/b/b/3411257-bhrbhwrosp-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854030633"
+  },
+  {
+    "name": "Baylis And Harding ROYALE GARDEN ROSE POPPY & VANILLA HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/7/0/3378867-bhrghwrpv-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854100466"
+  },
+  {
+    "name": "Baylis And Harding WILD LAVENDER GERANIUM 500ML HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/7/5/8749092-bhhwwlg-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854120020"
+  },
+  {
+    "name": "Baylis And Harding ROYALE GARDEN VERBENA & CHAMOMILE HAND WASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/e/0/3378871-bhrghwvc-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854100473"
+  },
+  {
+    "name": "Baylis And Harding ENGLISH LAVENDER & CHAMOMILE HANDWASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/6/a/3378713-bhbmhwlc-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854033337"
+  },
+  {
+    "name": "Baylis And Harding VETIVER CEDAR LEMONGRASS ANTIBAC HANDWASH",
+    "productImage": "https://www.murrayshealthandbeauty.com/graphics_cache/8/8/8749104-bhabhwvcl-2-3-1000.jpg",
+    "barcodeImage": "https://barcodeapi.org/api/auto/017854120013"
+  },
+  {
     "name": "Morrisons Onion Salad (Loose)",
     "productImage": "https://groceries.morrisons.com/images-v3/4b85987b-1398-4173-a0c1-3546047c9d74/82cfc720-206a-480e-8df2-ec938b07d070/500x500.jpg",
     "barcodeImage": "https://barcodeapi.org/api/auto/09014497"
